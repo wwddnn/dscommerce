@@ -91,7 +91,7 @@ public class User {
     public void setRoles(String[] roles) {
         this.roles = roles;
     }
-
+    /* nao se faz set de colecao(vc nao troca essa lista), mas somente get, atencao!*/
     public List<Order> getOrders() {
         return orders;
     }
