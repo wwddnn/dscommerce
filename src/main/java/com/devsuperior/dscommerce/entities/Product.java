@@ -11,7 +11,6 @@ import java.util.Set;
 @Table(name = "tb_product")
 public class Product {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -80,6 +79,7 @@ public class Product {
     public void setImgUrl(String imgUrl) {
         this.imgUrl = imgUrl;
     }
+
     /* como é colecao, usamos somente o metodo get*/
     public Set<Category> getCategories() {
         return categories;
